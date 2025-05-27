@@ -3,47 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/c
+ss/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <title>Contoactos - Personalcloud</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
 </head>
-<body>
-    <header>
-        <table>
-            <tr>
-                <td>
-                    <img src="./imagenes/personalcloud.png" alt="logo de personalcloud" width="10%">
-                </td>
-                <td>
-                    <h1>Contacto</h1>
-                </td>
-            </tr>
-        </table>
+
+<body class="fondo">
+    <header class="encabezado">
+            <div class="logo">
+                <img src="./imagenes/personalcloud.png" alt="logo de personalcloud" width="10%">
+            </div>
+            <h1 class="titulo-header">Contacto</h1>
         <hr>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./contacto.html">Contaco</a></li>
-                <li><a href="./ubicacion.html">Ubicación</a></li>
-            </ul>
+        <nav class="nav-manu">
+                <a href="./index.html">Inicio</a>
+                <a href="./productos.html">Productos</a>
+                <a href="./contacto.html">Contacto</a>
+                <a href="./ubicacion.html">Ubicación</a>
         </nav>
     </header>
     <hr>
     <main>
-        <form action="https://formspree.io/f/xkgrgpwl" method="post">
-            <input type="text" name="Nombre" id="nombre" placeholder="Ingrese su Nombre">
-            <br>
-            <input type="email" name="Email" id="email" placeholder="Ingrese su Email">
-            <br>
-            <textarea name="Consulta:" rows="5" cols="30" placeholder="Escriba aqui su consulta: "></textarea>
-            <br>
-            <input type="submit" name="Submit" id="submit" placeholder="Enviar">
-            <input type="reset" name="Reset" id="reset" placeholder="Restablecer">
-        </form>
+        <section class="contacto">
+            <form action="https://formspree.io/f/xkgrgpwl" method="post">
+                <input type="text" name="Nombre" id="nombre" placeholder="Ingrese su Nombre">
+                <br>
+                <input type="email" name="Email" id="email" placeholder="Ingrese su Email">
+                <br>
+                <textarea name="Consulta:" rows="5" cols="30" placeholder="Escriba aqui su consulta: "></textarea>
+                <br>
+                <input type="submit" name="Submit" id="submit" placeholder="Enviar">
+                <input type="reset" name="Reset" id="reset" placeholder="Restablecer">
+            </form>
+        </section>
     </main>
     <footer>
         <hr>
         <p>Desarrollador: Juan Manuel Ortiz Douna - 2025 | <a href="jm.ortizdouna@gmail.com">Email: jm.ortizdouna@gmail.com</a></p>
-        <hr>
+        <div class="redes-sociales">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
     </footer>
 </body>
 </html>
