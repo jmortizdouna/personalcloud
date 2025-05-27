@@ -1,0 +1,166 @@
+.fondo{
+    background-image: url('../imagenes/fondo.png');
+    background-size:cover;
+    background-position: center;
+    width: 100vw;
+}
+
+header{
+    background: linear-gradient(135deg, #05aaf7 0%,#3437db 100%);
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 0px 10px rgba(0, 0, 0 , 0.98);
+    top:0;
+    z-index: 1000;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.encabezado{
+    position: sticky;
+    padding: 1rem 2rem;
+    width:  auto;
+}
+.logo{
+    font-size: 1.8rem;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    left: 100;
+}
+.logo img{
+    height: 90px;
+    width: auto;
+}
+.titulo-header{
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+    font-size: 2.5rem;
+}
+.nav-manu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 1rem;
+}
+.nav-manu a{
+    color: rgb(245, 241, 241);
+    text-decoration: none;
+    font-weight: 100;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    list-style: none;
+    
+}
+.nav-manu a:hover{
+    background-color: rgba(255.255.255.0.2);
+    transform: scale(1.2);
+}
+
+h1,h2,h3,p{
+    font-family: "Roboto", sans-serif;
+}
+.prod{
+    text-align: center;
+}
+.contenedor-productos{
+    border: 1px solid;
+    color: rgb(8, 8, 8);
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    justify-content: space-around;
+    align-items: stretch;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding:20px;
+}
+.item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    height: auto;
+    width: 450px;
+    
+
+}
+
+.anim{
+    transform: transform 2s ease-in-out;
+}
+.anim:hover{
+    transform: scale(1.5);
+}
+.card{
+    background-color: transparent;
+    border: 0;
+}
+.hover-img {
+    transition: transform 0.3s ease;
+}
+
+.hover-img:hover {
+    transform: translateY(-10px);
+   
+}
+
+footer{
+    background: linear-gradient(135deg, #05aaf7 0%,#3437db 100%);
+    color: white;
+    padding: 2rem 0;
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+}
+footer .redes-sociales{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 1rem;
+}
+footer .redes-sociales i{
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+footer .redes-sociales i:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px){
+    .contenedor-productos{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 768px){
+    form{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea{
+        width: 90%;
+        max-width: 400px;
+        font-size: 1rem;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    input[type="submit"],
+    input[type="reset"]{
+        padding: 10px 20px;
+        font-size: 1rem;
+        margin: 5px;
+    }
+}
