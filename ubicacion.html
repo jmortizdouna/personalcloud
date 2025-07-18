@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/c
-ss/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
     
     <title>Ubicación - personalcloud</title>
@@ -22,6 +21,7 @@ ss/all.min.css">
                 <img src="./imagenes/personalcloud.png" alt="logo de personalcloud" width="10%">
             </div>
             <h1 class="titulo-header">¿Donde estamos?</h1>
+            
         <hr>
         <nav class="nav-manu">
             
@@ -29,23 +29,57 @@ ss/all.min.css">
             <a href="./productos.html">Productos</a>
             <a href="./contacto.html">Contacto</a>
             <a href="./ubicacion.html">Ubicación</a>
+            <a href="./carrito.html" class="position-relative">
+                <i class="fas fa-shopping-cart"></i> 
+                <span id="contador-carrito" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>Carrito de Compras</a>
             
         </nav>
     </header>
-    <main>
-        <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13130.659882583748!2d-58.4119586781841!3d-34.63790581246675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb1160a8e62b%3A0x42f33f7586b05be1!2sParque%20Patricios%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1745607245670!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-        <p>Nos encontramos en Parque Patricios. Hacemos entregas presenciales y tambien envíamos a todo el país.</p>
+    <main class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+                <div class="mapa-container rounded shadow overflow-hidden">
+                    <section>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13130.659882583748!2d-58.4119586781841!3d-34.63790581246675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb1160a8e62b%3A0x42f33f7586b05be1!2sParque%20Patricios%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1745607245670!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </section>
+                </div>
+            </div>
+
+        <div class="col-lg-4">
+            <div class="info-ubicacion bg-white p-4 rounded shadow">
+                <p class="mb-4">Nos encontramos en Parque Patricios, Ciudad Autónoma de Buenos Aires. Hacemos entregas presenciales y tambien envíamos a todo el país.</p>
+                <div class="detalles-entrega">
+                    <h3 class="mb-3">Opciones de entrega:</h3>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-store me-3 text-primary fs-4"></i>
+                        <span>Retiro presencial en nuestro local</span>
+                    </div>
+                    <div class="d-flex aling-items-center">
+                        <i class="fas fa-truck me-3 text-primary fs-4"></i>
+                        <span>Envíos a todo el país</span>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="horarios">
+                    <h3 class="mb-3">Horarios de atención:</h3>
+                    <p><strong>Lunes a Viernes:</strong> 9:00 - 18:00 hs</p>
+                    <p><strong>Sábados:</strong> 10:00 - 13:00 hs</p>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <hr>
-        <p>Desarrollador: Juan Manuel Ortiz Douna - 2025 | <a href="jm.ortizdouna@gmail.com">Email: jm.ortizdouna@gmail.com</a></p>
-        <div class="redes-sociales">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-whatsapp"></i>
+    <footer class="py-4">
+        <div class="container">
+            <hr>
+            <p>Desarrollador: Juan Manuel Ortiz Douna - 2025 | <a href="jm.ortizdouna@gmail.com" class="text-white">Email: jm.ortizdouna@gmail.com</a></p>
+            <div class="redes-sociales">
+                <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-white"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" class="text-white"><i class="fa-brands fa-telegram"></i></a>
+            </div>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
